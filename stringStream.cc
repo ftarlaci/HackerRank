@@ -18,7 +18,7 @@ vector<int> parseInts(string str) {
     stringstream ss(str);
     while(ss >> i){
         vec.push_back(i);
-        if(ss.peek() == ','){
+        if(ss.peek() == ',' || ss.peek() == ' '){
             ss.ignore();
         }
     }
