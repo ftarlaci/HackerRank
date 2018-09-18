@@ -9,9 +9,6 @@ Else if  and it is an even number, then print "even".
 Else if  and it is an odd number, then print "odd".
 */
 
-#include <iostream>
-#include <cstdio>
-using namespace std;
 
 #include <iostream>
 #include <cstdio>
