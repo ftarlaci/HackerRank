@@ -11,7 +11,6 @@ a += b is equivalent to a = a + b;
 
 #include <iostream>
 #include <cstdio>
-#include <vector>
 
 using namespace std;
 
