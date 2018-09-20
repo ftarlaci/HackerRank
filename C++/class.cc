@@ -39,20 +39,53 @@ Enter code for class Student here.
 Read statement for specification.
 */
 
-
-// TODO
+#include <iostream>
+#include <sstream>
+using namespace std;
 
 class Student {
-	public: 
-
-
-		
-
-	private:
-
+public: 
+    Student() { 
+        age = 0; 
+        first = ""; 
+        last = ""; 
+        standard = 0; 
+    }
+    int get_age() { 
+        return age; 
+    }
+    void set_age(int a) { 
+        age = a; 
+    }
+    string get_first_name() { 
+        return first; 
+    }
+    void set_first_name(string name) { 
+        first = name; 
+    }
+    string get_last_name() { 
+        return last; 
+    }
+    void set_last_name(string name) { 
+        last = name; 
+    }
+    int get_standard() { 
+        return standard; 
+    }
+    void set_standard(int std) { 
+        standard = std; 
+    }
+    string to_string () {
+        string final = std::to_string(age) + "," + first + "," + last + "," +       
+            std::to_string(standard);
+        return final;
+    }
+private:
+    int age;
+    string first;
+    string last;
+    int standard;
 };
-
-
 
 int main() {
     int age, standard;
