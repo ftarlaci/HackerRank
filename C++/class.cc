@@ -42,6 +42,17 @@ Read statement for specification.
 
 // TODO
 
+class Student {
+	public: 
+
+
+		
+
+	private:
+
+};
+
+
 
 int main() {
     int age, standard;
