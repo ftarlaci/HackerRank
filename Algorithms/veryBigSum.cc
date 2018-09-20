@@ -25,11 +25,17 @@ using namespace std;
 
 vector<string> split_string(string);
 
-// Complete the aVeryBigSum function below.
+
 long aVeryBigSum(vector<long> ar) {
-
-
+    if(ar.size() == 1) return ar[0];
+    long long sum = 0;
+    for(long i = 0; i < ar.size(); i++){
+        sum += ar[i];
+    }
+    return sum;
 }
+
+
 
 int main()
 {
