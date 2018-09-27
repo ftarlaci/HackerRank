@@ -47,8 +47,12 @@ class Box {
         int getHeight() {
             return h;
         }
-     long long CalculateVolume(){
-        return (long long)l*b*h;
+     long long CalculateVolume(){ 
+        // return (long long)l*b*h; didnt work
+        long long volume = l;
+		volume *= b;
+		volume *= h;
+		return volume;
     }
     
     friend bool operator < ( Box&A,Box& B){
