@@ -22,3 +22,29 @@ Ex:v.erase(v.begin()+2,v.begin()+5);(erases all the elements from the third
 element to the fifth element.)
 */
 
+
+int main() {
+    vector<int> v {};
+    int vsz;
+    
+    cin >> vsz;
+    for (int i = 0; i < vsz; i++) {
+        int n;
+        cin >> n;
+        v.push_back(n);
+    }
+    
+    int a, b;
+    cin >> a;
+    v.erase(begin(v) + a - 1);
+    cin >> a >> b;
+    v.erase(begin(v) + a - 1, begin(v) + b - 1);
+    
+    cout << v.size() << endl;
+    for_each(v.begin(), v.end(), [] (int i) { cout << i << " "; });
+    cout << endl;
+    
+    return 0;
+}
+
+
