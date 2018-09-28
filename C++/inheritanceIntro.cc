@@ -1,4 +1,19 @@
+/*
+Now write a function in Isosceles class such that the output is as given below.
+Sample Output
+I am an isosceles triangle
+In an isosceles triangle two sides are equal
+I am a triangle
 
+*/
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+
+
+using namespace std;
 
 
 
