@@ -17,6 +17,18 @@ meaning that the initial list is empty.
  *
  */
 SinglyLinkedListNode* insertNodeAtTail(SinglyLinkedListNode* head, int data) {
-
-
+	SinglyLinkedListNode * newNode;
+    newNode->data = data;
+    newNode->next = nullptr;
+    if(!head) {
+        head = temp;
+        return head;
+    }
+    SinglyLinkedListNode * temp = head;
+    while(temp != nullptr){
+        temp = temp->next;
+    }
+    temp = newNode;
+    temp->next = nullptr;
+    return head;
 }
