@@ -14,14 +14,11 @@ The primarily used ones are the following:
 public: Public members (variables, methods) can be accessed from anywhere the code is visible.
 private: Private members can be accessed only by other member functions, and it can not be 
 accessed outside of class.
-
 */
-
 /*
 You have to create a class, named Student, representing the student's details, as mentioned 
 above, and store the data of a student. Create setter and getter functions for each element; 
 that is, the class should at least have following functions:
-
 get_age, set_age
 get_first_name, set_first_name
 get_last_name, set_last_name
@@ -89,16 +86,13 @@ private:
 
 int main() {
     int age, standard;
-    string first_name, last_name;
-    
+    string first_name, last_name;    
     cin >> age >> first_name >> last_name >> standard;
-    
     Student st;
     st.set_age(age);
     st.set_standard(standard);
     st.set_first_name(first_name);
     st.set_last_name(last_name);
-    
     cout << st.get_age() << "\n";
     cout << st.get_last_name() << ", " << st.get_first_name() << "\n";
     cout << st.get_standard() << "\n";
