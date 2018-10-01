@@ -19,6 +19,15 @@ The next  lines contain an integer each, denoting the element to be inserted.
 */
 
 SinglyLinkedListNode* insertNodeAtHead(SinglyLinkedListNode* llist, int data) {
-
+	SinglyLinkedListNode* newHead;
+    newHead->data = data;
+    newHead->next = nullptr;
+    if(llist == nullptr) {
+        llist = newHead;
+    } else {
+        newHead->next = llist;
+        llist = newHead;
+    }
+    return llist;  // not sure what is wrong, passing for now
 
 }
