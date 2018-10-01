@@ -18,7 +18,27 @@ delete the node.
  * };
  *
  */
+
 SinglyLinkedListNode* deleteNode(SinglyLinkedListNode* head, int position) {
-
-
+    if(!head) return head;
+    if(!head->next) {
+        delete(head);
+        return nullptr;
+    }
+    SinglyLinkedListNode * curr = head;
+   // SinglyLinkedListNode * fastRunner = head->next;
+    
+    int index = 0;
+    while(curr != nullptr){
+        if(index == position){           
+            curr->data = curr->next->data;
+            SinglyLinkedListNode *toDelete = curr->next;
+            curr->next = curr->next->next;
+            delete(toDelete);
+        }
+        index++;
+        curr = curr->next;
+        
+    }
+    return head;
 }
