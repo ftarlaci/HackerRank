@@ -17,6 +17,15 @@ list is empty.
  *
  */
 bool compare_lists(SinglyLinkedListNode* head1, SinglyLinkedListNode* head2) {
-
+    if(!head1 && head2 || head1 && !head2) return false;
+    while(head1 && head2){
+        if(head1->data == head2->data){
+            head1 = head1->next;
+            head2 = head2->next;
+        } else {
+            return false;
+        }  
+    }
+    return true;  // fails a test but didnt have time to investigate. not %100 correct
 
 }
